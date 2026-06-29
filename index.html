@@ -98,7 +98,7 @@ header.solid{background:rgba(251,247,243,.95);box-shadow:0 8px 32px rgba(44,36,3
 @keyframes mqleft{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 .hero-body{flex:1;display:grid;grid-template-columns:1fr 1fr;position:relative;z-index:1;}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 36px 80px calc((100vw - var(--maxw))/2 + 36px);background:linear-gradient(135deg,var(--bege) 0%,rgba(245,239,230,.8) 100%);}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 36px 80px calc((100vw - var(--maxw))/2 + 36px);background:rgba(245,239,230,.4);backdrop-filter:blur(20px);border-right:1px solid rgba(245,239,230,.5);}
 .hero-eyebrow{display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--champagne-d);margin-bottom:28px;font-weight:500;}
 .hero-eyebrow span{width:36px;height:2px;background:linear-gradient(90deg,var(--champagne-d),transparent);}
 .hero h1{font-family:var(--fd);font-weight:700;font-size:clamp(56px,7vw,92px);line-height:1.05;letter-spacing:-2px;color:var(--escuro);font-style:italic;}
@@ -415,18 +415,32 @@ footer span{opacity:.7;}
     </div>
     <div class="gallery-wrap">
       <div class="g-track">
+        <div class="g-card wide">
+          <img src="process-washing.jpg" alt="Lavagem capilar profissional">
+          <div class="gcap">
+            <strong>Lavagem Premium</strong>
+            <span>Limpeza profunda e cuidadosa</span>
+          </div>
+        </div>
+        <div class="g-card">
+          <img src="process-drying.jpg" alt="Secagem profissional">
+          <div class="gcap">
+            <strong>Secagem Profissional</strong>
+            <span>Técnica de especialista</span>
+          </div>
+        </div>
+        <div class="g-card">
+          <img src="process-finishing.jpg" alt="Finalização com óleos">
+          <div class="gcap">
+            <strong>Finalização Luxuosa</strong>
+            <span>Brilho e proteção premium</span>
+          </div>
+        </div>
         <div class="g-card">
           <img src="smoothing-treatment.jpg" alt="Alisamento premium resultado">
           <div class="gcap">
             <strong>Alisamento Premium</strong>
             <span>Resultado impecável</span>
-          </div>
-        </div>
-        <div class="g-card wide">
-          <img src="hero-bg.jpg" alt="Ambiente do salão">
-          <div class="gcap">
-            <strong>Ambiente Luxuoso</strong>
-            <span>Conforto e elegância</span>
           </div>
         </div>
         <div class="g-card">
@@ -578,20 +592,20 @@ footer span{opacity:.7;}
       <div class="tab-group">
         <div class="tab-group-title">Alisamento e Coloração</div>
         <div class="tab-row">
+          <span>Progressiva Premium</span>
+          <strong>R$ 350,00</strong>
+        </div>
+        <div class="tab-row">
           <span>Alisamento Premium</span>
           <strong>R$ 280,00</strong>
         </div>
         <div class="tab-row">
           <span>Mechas Sofisticadas</span>
-          <strong>R$ 220,00</strong>
+          <strong>R$ 240,00</strong>
         </div>
         <div class="tab-row">
           <span>Coloração Completa</span>
-          <strong>R$ 180,00</strong>
-        </div>
-        <div class="tab-row">
-          <span>Retoque de Raiz</span>
-          <strong>R$ 120,00</strong>
+          <strong>R$ 200,00</strong>
           <span class="tag">Popular</span>
         </div>
       </div>
@@ -599,20 +613,21 @@ footer span{opacity:.7;}
         <div class="tab-group-title">Terapia e Tratamentos</div>
         <div class="tab-row">
           <span>Terapia Capilar Intensiva</span>
-          <strong>R$ 150,00</strong>
+          <strong>R$ 180,00</strong>
         </div>
         <div class="tab-row">
           <span>Hidratação Profunda</span>
-          <strong>R$ 120,00</strong>
+          <strong>R$ 140,00</strong>
         </div>
         <div class="tab-row">
           <span>Corte Premium</span>
-          <strong>R$ 85,00</strong>
+          <strong>R$ 90,00</strong>
+          <span class="tag">Novo</span>
         </div>
         <div class="tab-row">
           <span>Penteado Especial</span>
-          <strong>R$ 95,00</strong>
-          <span class="tag">Novo</span>
+          <strong>R$ 120,00</strong>
+          <span class="tag">Premium</span>
         </div>
       </div>
     </div>
