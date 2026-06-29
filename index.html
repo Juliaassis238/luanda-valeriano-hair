@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luanda Valeriano Therapy Hair — Araxá MG</title>
+<meta name="description" content="Especialista em Alisamento Premium, Mechas e Terapia Capilar. Mais de 20 anos transformando a autoestima feminina em Araxá MG.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/*
+  PALETA — LUANDA VALERIANO THERAPY HAIR
+  --musgo        #4A5C4E   verde musgo escuro (assinatura)
+  --musgo-light  #6B7F6E   verde musgo médio
+  --musgo-pale   #E8EDE9   verde musgo pálido (fundos suaves)
+  --bege         #F5EFE6   bege quente principal
+  --bege-dark    #E0D4C4   bege escuro (bordas)
+  --champagne    #E8C5B0   champanhe rosado (acento quente)
+  --champagne-d  #C4956E   champanhe escuro (destaques)
+  --creme        #FBF7F3   quase branco (fundo base)
+  --escuro       #2C2420   marrom quase-preto (texto)
+*/
+:root{
+  --musgo:#4A5C4E;
+  --musgo-light:#6B7F6E;
+  --musgo-pale:#E8EDE9;
+  --bege:#F5EFE6;
+  --bege-dark:#E0D4C4;
+  --champagne:#E8C5B0;
+  --champagne-d:#C4956E;
+  --creme:#FBF7F3;
+  --escuro:#2C2420;
+  --fd:'Cormorant Garamond',Georgia,serif;
+  --fb:'Jost',-apple-system,sans-serif;
+  --maxw:1300px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation-duration:.001ms!important;transition-duration:.001ms!important;}}
+body{background:var(--creme);color:var(--escuro);font-family:var(--fb);font-weight:300;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+::selection{background:var(--champagne);color:var(--escuro);}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 36px;}
+:focus-visible{outline:2px solid var(--musgo);outline-offset:4px;}
+
+/* grão de papel */
+body::after{content:'';position:fixed;inset:0;z-index:400;pointer-events:none;opacity:.028;
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='1'/></svg>");}
+
+/* barra progresso */
+#prog{position:fixed;top:0;left:0;height:2px;background:var(--champagne-d);z-index:500;width:0;transition:width .1s linear;}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1);}
+.rv.on{opacity:1;transform:translateY(0);}
+.rvs{opacity:0;transform:scale(.96);transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1);}
+.rvs.on{opacity:1;transform:scale(1);}
+
+/* ====== HEADER ====== */
+header{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(251,247,243,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(74,92,78,.12);transition:background .4s,box-shadow .4s;}
+header.solid{background:rgba(251,247,243,.97);box-shadow:0 2px 20px rgba(44,36,32,.07);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 36px;max-width:var(--maxw);margin:0 auto;}
+.nav-logo{display:flex;align-items:center;gap:14px;}
+.lv-mark{width:44px;height:44px;flex-shrink:0;}
+.nav-logo .nb{display:flex;flex-direction:column;line-height:1.2;}
+.nav-logo .nb strong{font-family:var(--fd);font-size:17px;font-weight:600;letter-spacing:.5px;color:var(--escuro);}
+.nav-logo .nb small{font-family:var(--fb);font-size:8.5px;letter-spacing:3px;color:var(--musgo-light);font-weight:500;}
+.nav-links{display:flex;gap:36px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
+.nav-links a{position:relative;padding-bottom:4px;opacity:.75;transition:opacity .3s;}
+.nav-links a:hover{opacity:1;}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--musgo);transition:width .4s cubic-bezier(.16,1,.3,1);}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{background:var(--musgo);color:#fff;padding:12px 26px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;transition:background .35s;}
+.nav-cta:hover{background:var(--musgo-light);}
+.nav-tog{display:none;background:none;border:none;color:var(--escuro);font-size:24px;cursor:pointer;padding:4px;}
+
+/* mobile panel */
+.mpanel{position:fixed;inset:0;background:var(--creme);z-index:350;display:none;flex-direction:column;align-items:center;justify-content:center;gap:38px;}
+.mpanel.open{display:flex;}
+.mpanel a{font-family:var(--fd);font-size:30px;font-weight:400;color:var(--escuro);}
+.mpanel a:hover{color:var(--musgo);}
+.mcls{position:absolute;top:28px;right:32px;background:none;border:none;font-size:30px;cursor:pointer;color:var(--escuro);}
+
+@media(max-width:960px){.nav-links,.nav-cta{display:none;}.nav-tog{display:block;}}
+
+/* ====== HERO ====== */
+.hero{min-height:100vh;display:flex;flex-direction:column;padding-top:82px;overflow:hidden;position:relative;}
+.hero-marquee{background:var(--musgo);padding:13px 0;overflow:hidden;white-space:nowrap;flex-shrink:0;}
+.mq-track{display:inline-flex;animation:mqleft 30s linear infinite;}
+.mq-track span{font-family:var(--fd);font-style:italic;font-size:15px;color:rgba(251,247,243,.7);padding:0 32px;letter-spacing:.5px;}
+.mq-track span::after{content:'—';margin-left:32px;color:var(--champagne);opacity:.5;}
+@keyframes mqleft{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+.hero-body{flex:1;display:grid;grid-template-columns:1fr 1fr;position:relative;}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 36px 80px calc((100vw - var(--maxw))/2 + 36px);background:var(--bege);}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--musgo);margin-bottom:28px;}
+.hero-eyebrow span{width:36px;height:1px;background:var(--musgo-light);}
+.hero h1{font-family:var(--fd);font-weight:400;font-size:clamp(46px,5.5vw,76px);line-height:1.05;letter-spacing:-1px;color:var(--escuro);}
+.hero h1 em{font-style:italic;color:var(--musgo);display:block;}
+.hero h1 .outline{-webkit-text-stroke:1px var(--champagne-d);-webkit-text-fill-color:transparent;font-weight:300;}
+.hero-desc{margin-top:26px;font-size:16px;line-height:1.85;color:rgba(44,36,32,.65);max-width:430px;}
+.hero-btns{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap;}
+.btn-musgo{background:var(--musgo);color:#fff;padding:17px 34px;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:500;border:2px solid var(--musgo);transition:all .35s;}
+.btn-musgo:hover{background:transparent;color:var(--musgo);}
+.btn-outline{border:1.5px solid var(--bege-dark);padding:17px 28px;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;transition:border-color .35s;}
+.btn-outline:hover{border-color:var(--musgo);}
+.hero-stats{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--bege-dark);}
+.hst{flex:1;padding:22px 0 0;border-right:1px solid var(--bege-dark);}
+.hst:last-child{border-right:none;}
+.hst strong{display:block;font-family:var(--fd);font-size:clamp(26px,3vw,40px);font-weight:500;color:var(--musgo);}
+.hst span{display:block;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(44,36,32,.5);margin-top:5px;}
+
+.hero-right{position:relative;overflow:hidden;}
+.hero-img-main{width:100%;height:100%;object-fit:cover;display:block;}
+.hero-img-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(245,239,230,.15),transparent);}
+.hero-badge{position:absolute;bottom:36px;left:36px;background:rgba(251,247,243,.92);backdrop-filter:blur(10px);padding:20px 26px;border-left:3px solid var(--champagne-d);}
+.hero-badge strong{display:block;font-family:var(--fd);font-size:22px;font-weight:600;color:var(--escuro);}
+.hero-badge span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--musgo-light);}
+
+@media(max-width:900px){
+  .hero-body{grid-template-columns:1fr;}
+  .hero-right{height:60vw;max-height:420px;}
+  .hero-left{padding:60px 36px;}
+}
+
+/* ====== MARQUEE ASSINATURA ====== */
+.sig-strip{padding:52px 0;border-top:1px solid var(--bege-dark);border-bottom:1px solid var(--bege-dark);background:var(--musgo-pale);overflow:hidden;white-space:nowrap;}
+.sig-strip .track{display:inline-flex;animation:mqleft 40s linear infinite;}
+.sig-strip .track span{font-family:var(--fd);font-size:clamp(28px,4vw,52px);font-weight:400;color:var(--musgo);padding:0 50px;display:inline-flex;align-items:center;gap:24px;}
+.sig-strip .track span em{font-style:italic;color:var(--champagne-d);}
+.sig-strip .track span b{font-size:18px;color:var(--champagne-d);font-weight:300;}
+
+/* ====== SECTION BASE ====== */
+section{padding:120px 0;position:relative;}
+.s-head{max-width:640px;margin-bottom:72px;}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--musgo-light);margin-bottom:20px;}
+.eyebrow span{width:28px;height:1px;background:var(--musgo-light);flex-shrink:0;}
+.s-head h2{font-family:var(--fd);font-weight:400;font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.5px;color:var(--escuro);}
+.s-head h2 em{font-style:italic;color:var(--musgo);}
+.s-head p{margin-top:20px;color:rgba(44,36,32,.62);font-size:16px;line-height:1.8;}
+
+/* ====== SOBRE ====== */
+.about{background:var(--bege);}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center;}
+.about-img-stack{position:relative;}
+.about-img-main{width:100%;aspect-ratio:4/5;object-fit:cover;}
+.about-img-badge{position:absolute;bottom:-24px;right:-24px;background:var(--musgo);color:#fff;padding:28px 24px;text-align:center;}
+.about-img-badge strong{display:block;font-family:var(--fd);font-size:36px;font-weight:500;}
+.about-img-badge span{display:block;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;opacity:.75;margin-top:4px;}
+.about-text .quote{font-family:var(--fd);font-size:clamp(21px,2.4vw,28px);line-height:1.5;font-weight:400;color:var(--escuro);margin-bottom:32px;}
+.about-text .quote em{font-style:italic;color:var(--musgo);}
+.about-text p{font-size:15.5px;line-height:1.9;color:rgba(44,36,32,.68);margin-bottom:20px;max-width:500px;}
+.about-sig{margin-top:36px;display:flex;align-items:center;gap:18px;}
+.about-sig .ln{width:54px;height:1px;background:var(--champagne-d);}
+.about-sig span{font-family:var(--fd);font-style:italic;font-size:22px;color:var(--musgo);}
+
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;}.about-img-stack{max-width:320px;margin:0 auto 48px;}.about-img-badge{right:-12px;bottom:-12px;}}
+
+/* ====== GALERIA CARROSSEL ====== */
+.gallery{background:var(--musgo-pale);}
+.gallery-wrap{position:relative;}
+.g-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--bege-dark) transparent;}
+.g-track:active{cursor:grabbing;}
+.g-track::-webkit-scrollbar{height:4px;}
+.g-track::-webkit-scrollbar-thumb{background:var(--bege-dark);}
+.g-card{flex:0 0 auto;scroll-snap-align:start;position:relative;overflow:hidden;}
+.g-card img{width:320px;height:420px;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.16,1,.3,1);}
+.g-card.wide img{width:480px;}
+.g-card:hover img{transform:scale(1.04);}
+.g-card .gcap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,36,32,.7));padding:28px 18px 16px;color:#fff;}
+.g-card .gcap strong{display:block;font-family:var(--fd);font-size:18px;font-weight:400;}
+.g-card .gcap span{font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;}
+.g-ctrls{display:flex;gap:12px;margin-top:28px;}
+.gbtn{width:48px;height:48px;border:1.5px solid var(--bege-dark);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;color:var(--escuro);}
+.gbtn:hover{background:var(--musgo);border-color:var(--musgo);color:#fff;}
+.gbtn svg{width:18px;height:18px;}
+
+@media(max-width:640px){.g-card img{width:260px;height:340px;}.g-card.wide img{width:380px;}}
+
+/* ====== SERVIÇOS ====== */
+.services{background:var(--creme);}
+.svc-list{display:flex;flex-direction:column;}
+.svc-row{display:grid;grid-template-columns:80px 1.1fr 1fr;gap:40px;align-items:center;padding:48px 0;border-top:1px solid var(--bege-dark);position:relative;overflow:hidden;transition:background .4s;}
+.svc-list .svc-row:last-child{border-bottom:1px solid var(--bege-dark);}
+.svc-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--musgo-pale);transition:width .5s cubic-bezier(.16,1,.3,1);z-index:0;}
+.svc-row:hover::before{width:100%;}
+.svc-row>*{position:relative;z-index:1;}
+.svc-n{font-family:var(--fd);font-style:italic;font-size:14px;color:var(--musgo-light);letter-spacing:.5px;}
+.svc-name h3{font-family:var(--fd);font-size:clamp(24px,2.5vw,34px);font-weight:400;color:var(--escuro);margin-bottom:8px;}
+.svc-name span{font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--musgo-light);}
+.svc-desc p{font-size:14.5px;color:rgba(44,36,32,.62);line-height:1.75;max-width:400px;}
+.svc-desc a{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--musgo);border-bottom:1px solid var(--champagne-d);padding-bottom:3px;transition:gap .3s;}
+.svc-desc a:hover{gap:14px;}
+@media(max-width:820px){.svc-row{grid-template-columns:1fr;gap:12px;padding:36px 0;}.svc-n{display:none;}}
+
+/* ====== TABELA DE PREÇOS ====== */
+.precos{background:var(--bege);}
+.precos-head-row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:56px;}
+.precos-note{font-size:12.5px;color:var(--musgo-light);max-width:280px;text-align:right;line-height:1.6;}
+.tabela-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--bege-dark);}
+.tab-group{background:var(--creme);padding:0;}
+.tab-group-title{background:var(--musgo);color:#fff;padding:16px 28px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;}
+.tab-row{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;border-bottom:1px solid var(--bege-dark);transition:background .25s;}
+.tab-row:last-child{border-bottom:none;}
+.tab-row:hover{background:var(--musgo-pale);}
+.tab-row span{font-size:14.5px;color:rgba(44,36,32,.82);}
+.tab-row strong{font-family:var(--fd);font-size:18px;font-weight:500;color:var(--musgo);white-space:nowrap;}
+.tab-row .tag{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;background:var(--champagne);color:var(--escuro);padding:3px 8px;margin-left:8px;}
+.precos-obs{margin-top:28px;font-size:13px;color:rgba(44,36,32,.5);line-height:1.7;}
+.precos-obs strong{color:var(--musgo);}
+
+@media(max-width:800px){.tabela-wrap{grid-template-columns:1fr;}}
+
+/* ====== PROCESSO ====== */
+.ritual{background:var(--musgo);overflow:hidden;}
+.ritual .s-head h2{color:#fff;}
+.ritual .s-head h2 em{color:var(--champagne);}
+.ritual .s-head p{color:rgba(251,247,243,.65);}
+.ritual .eyebrow{color:var(--champagne);}
+.ritual .eyebrow span{background:var(--champagne-d);}
+.ritual-rail{display:flex;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(251,247,243,.2) transparent;padding-bottom:8px;}
+.ritual-rail::-webkit-scrollbar{height:3px;}
+.r-step{flex:0 0 280px;scroll-snap-align:start;background:rgba(251,247,243,.06);border:1px solid rgba(251,247,243,.12);padding:36px 28px;transition:background .3s;}
+.r-step:hover{background:rgba(251,247,243,.11);}
+.r-step .rn{font-family:var(--fd);font-style:italic;font-size:42px;font-weight:300;color:var(--champagne);opacity:.4;display:block;line-height:1;margin-bottom:20px;}
+.r-step h4{font-family:var(--fd);font-size:22px;font-weight:400;color:#fff;margin-bottom:12px;}
+.r-step p{font-size:13.5px;color:rgba(251,247,243,.62);line-height:1.75;}
+.rail-hint{margin-top:22px;display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(251,247,243,.4);}
+.arr{animation:arrarr 1.8s ease-in-out infinite;}
+@keyframes arrarr{0%,100%{transform:translateX(0);}50%{transform:translateX(7px);}}
+
+/* ====== DEPOIMENTOS ====== */
+.testi{background:var(--musgo-pale);}
+.testi-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1px;background:var(--bege-dark);border:1px solid var(--bege-dark);scrollbar-width:none;}
+.testi-track::-webkit-scrollbar{display:none;}
+.t-card{scroll-snap-align:start;flex:0 0 100%;background:var(--creme);padding:56px 52px;min-height:280px;}
+@media(min-width:700px){.t-card{flex:0 0 50%;}}
+@media(min-width:1060px){.t-card{flex:0 0 calc(100%/3);}}
+.qm{font-family:var(--fd);font-size:64px;color:var(--champagne-d);line-height:.9;display:block;margin-bottom:14px;}
+.t-card p{font-size:15px;line-height:1.85;color:rgba(44,36,32,.72);min-height:88px;margin-bottom:28px;}
+.t-auth strong{display:block;font-size:13.5px;font-weight:500;}
+.t-auth span{font-size:11px;color:var(--musgo-light);}
+
+/* ====== CONTATO ====== */
+.contato{background:var(--bege);}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.c-lead{font-family:var(--fd);font-size:clamp(28px,3.2vw,42px);line-height:1.3;font-weight:400;color:var(--escuro);margin-bottom:44px;}
+.c-lead em{font-style:italic;color:var(--musgo);}
+.c-items{display:flex;flex-direction:column;gap:24px;margin-bottom:44px;}
+.c-item .lbl{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--musgo-light);margin-bottom:7px;}
+.c-item .val{font-size:17px;color:var(--escuro);}
+.c-social{display:flex;gap:26px;}
+.c-social a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--bege-dark);padding-bottom:4px;transition:color .3s,border-color .3s;}
+.c-social a:hover{color:var(--musgo);border-color:var(--musgo);}
+.c-form{display:flex;flex-direction:column;gap:26px;}
+.f-row{display:flex;flex-direction:column;gap:10px;}
+.f-row label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--musgo-light);}
+.f-row input,.f-row select,.f-row textarea{background:transparent;border:none;border-bottom:1.5px solid var(--bege-dark);padding:12px 2px;color:var(--escuro);font-family:var(--fb);font-size:16px;font-weight:300;transition:border-color .3s;}
+.f-row select option{background:var(--creme);}
+.f-row input:focus,.f-row select:focus,.f-row textarea:focus{border-color:var(--musgo);outline:none;}
+.f-row textarea{resize:vertical;min-height:90px;}
+.f-submit{margin-top:10px;background:var(--musgo);color:#fff;border:2px solid var(--musgo);padding:18px;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-weight:500;font-family:var(--fb);transition:all .35s;}
+.f-submit:hover{background:transparent;color:var(--musgo);}
+
+@media(max-width:900px){.contato-grid{grid-template-columns:1fr;gap:50px;}}
+
+/* ====== WHATSAPP FLOAT ====== */
+.wfloat{position:fixed;bottom:28px;right:28px;z-index:290;display:flex;align-items:center;gap:12px;background:var(--musgo);color:#fff;padding:16px 24px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;box-shadow:0 12px 34px rgba(74,92,78,.35);transition:transform .35s cubic-bezier(.16,1,.3,1),background .3s;}
+.wfloat:hover{transform:translateY(-4px);background:var(--musgo-light);}
+.wfloat svg{width:20px;height:20px;flex-shrink:0;}
+@media(max-width:520px){.wfloat .wlbl{display:none;}.wfloat{padding:16px;border-radius:50%;}}
+
+/* ====== FOOTER ====== */
+footer{padding:64px 0 40px;border-top:1px solid var(--bege-dark);background:var(--creme);}
+.f-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:40px;margin-bottom:50px;}
+.f-brand{display:flex;align-items:center;gap:14px;}
+.f-brand .nb{display:flex;flex-direction:column;line-height:1.25;}
+.f-brand .nb strong{font-family:var(--fd);font-size:17px;font-weight:600;}
+.f-brand .nb small{font-size:9px;letter-spacing:2.5px;color:var(--musgo-light);font-weight:500;}
+.f-cols{display:flex;gap:64px;flex-wrap:wrap;}
+.f-col h5{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--musgo-light);margin-bottom:18px;}
+.f-col a,.f-col p{display:block;font-size:13.5px;color:rgba(44,36,32,.65);margin-bottom:10px;}
+.f-col a:hover{color:var(--musgo);}
+.f-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:28px;border-top:1px solid var(--bege-dark);font-size:11.5px;color:rgba(44,36,32,.4);}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- SVG hidden defs -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="lv" viewBox="0 0 260 120">
+    <!-- LV monogram fiel ao logo dela -->
+    <g fill="none">
+      <!-- L -->
+      <path d="M 20 10 L 20 90 L 80 90" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- V -->
+      <path d="M 100 10 L 140 90 L 180 10" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- traço ornamental inferior -->
+      <line x1="18" y1="108" x2="182" y2="108" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+      <line x1="50" y1="116" x2="150" y2="116" stroke="currentColor" stroke-width="0.7" opacity="0.28"/>
+    </g>
+  </symbol>
+  <symbol id="arr-l" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arr-r" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============================== HEADER ============================== -->
+<header id="hdr">
+  <nav class="nav">
+    <a href="#topo" class="nav-logo" aria-label="Luanda Valeriano Therapy Hair">
+      <svg class="lv-mark" viewBox="0 0 260 120" style="color:var(--musgo)"><use href="#lv"/></svg>
+      <span class="nb"><strong>Luanda Valeriano</strong><small>THERAPY HAIR</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#precos">Preços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a href="https://wa.me/5534366424333" class="nav-cta" target="_blank" rel="noopener">Agendar agora</a>
+    <button class="nav-tog" id="ntog" aria-label="Menu">&#9776;</button>
+  </nav>
+</header>
+
+<div class="mpanel" id="mpanel">
+  <button class="mcls" id="mcls" aria-label="Fechar">&times;</button>
+  <a href="#sobre">Sobre</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#precos">Preços</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#contato">Contato</a>
+</div>
+
+<!-- ============================== HERO ============================== -->
+<div id="topo"></div>
+<section class="hero" style="padding:0;">
+  <div class="hero-marquee">
+    <div class="mq-track">
+      <span>Alisamento Premium</span><span>Mechas</span><span>Terapia Capilar</span><span>Mais de 20 anos de experiência</span><span>Araxá MG</span>
+      <span>Alisamento Premium</span><span>Mechas</span><span>Terapia Capilar</span><span>Mais de 20 anos de experiência</span><span>Araxá MG</span>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="hero-left">
+      <p class="hero-eyebrow"><span></span> ESPECIALISTA CAPILAR — ARAXÁ MG</p>
+      <h1>
+        O fio que <em>transforma</em><br>
+        <span class="outline">a mulher.</span>
+      </h1>
+      <p class="hero-desc">Alisamento Premium, Mechas e Terapia Capilar conduzidos com técnica refinada e mais de duas décadas dedicadas a transformar a autoestima feminina.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5534366424333" class="btn-musgo" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+        <a href="#galeria" class="btn-outline">Ver transformações</a>
+      </div>
+      <div class="hero-stats rv">
+        <div class="hst"><strong data-c="20">0</strong><span>Anos de experiência</span></div>
+        <div class="hst"><strong data-c="3000">0</strong><span>Transformações</span></div>
+        <div class="hst"><strong data-c="100">0</strong><span>Dedicação ao fio</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img class="hero-img-main"
+        src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="Mulher com cabelo liso e brilhoso resultado alisamento"
+        loading="eager"
+        onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+      <div class="hero-img-overlay"></div>
+      <div class="hero-badge">
+        <strong>+ de 20 anos</strong>
+        <span>Renovando autoestimas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MARQUEE ASSINATURA ============================== -->
+<div class="sig-strip">
+  <div class="track">
+    <span>Ritual Capilar <b>—</b> <em>terapia que transforma</em></span>
+    <span>Ritual Capilar <b>—</b> <em>terapia que transforma</em></span>
+    <span>Ritual Capilar <b>—</b> <em>terapia que transforma</em></span>
+  </div>
+</div>
+
+<!-- ============================== SOBRE ============================== -->
+<section class="about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-img-stack rvs">
+      <img class="about-img-main"
+        src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=900"
+        alt="Aplicação de tratamento capilar profissional"
+        loading="lazy"
+        onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+      <div class="about-img-badge">
+        <strong>20+</strong>
+        <span>Anos de carreira</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="s-head rv" style="margin-bottom:32px;">
+        <p class="eyebrow"><span></span> SOBRE LUANDA VALERIANO</p>
+        <h2>Arte, técnica e <em>dedicação</em> ao fio</h2>
+      </div>
+      <p class="quote rv">"Não trabalho apenas com fios — trabalho com a <em>confiança</em> que cada mulher carrega ao se olhar no espelho."</p>
+      <p class="rv">Há mais de vinte anos, Luanda Valeriano dedica sua trajetória à arte da terapia capilar em Araxá MG. O que começou como técnica tornou-se filosofia: cada cabelo carrega uma história, e cada atendimento é a chance de reescrevê-la.</p>
+      <p class="rv">Especialista em Alisamento Premium, Mechas e protocolos terapêuticos exclusivos, Luanda já realizou milhares de transformações — sempre com um único compromisso: devolver à cliente a sensação de se reconhecer mais bonita e mais segura.</p>
+      <div class="about-sig rv"><span class="ln"></span><span>Luanda Valeriano</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GALERIA ============================== -->
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="eyebrow"><span></span> GALERIA</p>
+      <h2>Transformações <em>reais</em></h2>
+      <p>Resultados do dia a dia — arraste para o lado e explore.</p>
+    </div>
+  </div>
+  <div class="wrap gallery-wrap">
+    <div class="g-track" id="gtrack">
+
+      <div class="g-card">
+        <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=700"
+          alt="Cabelo liso brilhoso após alisamento" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Alisamento Premium</strong><span>Cabelo liso e brilhoso</span></div>
+      </div>
+
+      <div class="g-card wide">
+        <img src="https://images.pexels.com/photos/3993456/pexels-photo-3993456.jpeg?auto=compress&cs=tinysrgb&w=1000"
+          alt="Lavagem capilar profissional no salão" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Terapia Capilar</strong><span>Lavagem e hidratação profunda</span></div>
+      </div>
+
+      <div class="g-card">
+        <img src="https://images.pexels.com/photos/3065197/pexels-photo-3065197.jpeg?auto=compress&cs=tinysrgb&w=700"
+          alt="Secagem e finalização do cabelo liso" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Finalização</strong><span>Escova e secagem profissional</span></div>
+      </div>
+
+      <div class="g-card">
+        <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=700"
+          alt="Resultado de progressiva cabelo sedoso" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Progressiva</strong><span>Fio sedoso e sem frizz</span></div>
+      </div>
+
+      <div class="g-card wide">
+        <img src="https://images.pexels.com/photos/3762872/pexels-photo-3762872.jpeg?auto=compress&cs=tinysrgb&w=1000"
+          alt="Aplicação de mechas e coloração" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Mechas</strong><span>Iluminação e personalização de tom</span></div>
+      </div>
+
+      <div class="g-card">
+        <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=700"
+          alt="Reconstrução capilar tratamento intensivo" loading="lazy"
+          onerror="this.style.background='#E8EDE9';this.removeAttribute('src');">
+        <div class="gcap"><strong>Reconstrução</strong><span>Terapia intensiva do fio</span></div>
+      </div>
+
+    </div>
+    <div class="g-ctrls">
+      <button class="gbtn" id="gprev" aria-label="Anterior"><svg viewBox="0 0 24 24"><use href="#arr-l"/></svg></button>
+      <button class="gbtn" id="gnext" aria-label="Próximo"><svg viewBox="0 0 24 24"><use href="#arr-r"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVIÇOS ============================== -->
+<section class="services" id="servicos">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="eyebrow"><span></span> SERVIÇOS</p>
+      <h2>Três caminhos para a <em>sua transformação</em></h2>
+      <p>Cada serviço é conduzido com avaliação individual do fio e do objetivo da cliente — técnica e sensibilidade na mesma medida.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row rv">
+        <span class="svc-n">01</span>
+        <div class="svc-name"><h3>Alisamento Premium</h3><span>Liso natural · longa duração</span></div>
+        <div class="svc-desc">
+          <p>Técnica refinada que respeita a estrutura do fio, entregando um liso natural, brilhoso e com longa duração — sem agredir a fibra capilar.</p>
+          <a href="https://wa.me/5534366424333" target="_blank" rel="noopener">Agendar <svg width="14" height="14" viewBox="0 0 24 24" style="display:inline;vertical-align:middle;"><use href="#arr-r"/></svg></a>
+        </div>
+      </div>
+      <div class="svc-row rv">
+        <span class="svc-n">02</span>
+        <div class="svc-name"><h3>Mechas</h3><span>Iluminação · personalização</span></div>
+        <div class="svc-desc">
+          <p>Estudo de coloração personalizado para iluminar o rosto e valorizar o tom de pele, com técnicas que vão do clássico ao contemporâneo.</p>
+          <a href="https://wa.me/5534366424333" target="_blank" rel="noopener">Agendar <svg width="14" height="14" viewBox="0 0 24 24" style="display:inline;vertical-align:middle;"><use href="#arr-r"/></svg></a>
+        </div>
+      </div>
+      <div class="svc-row rv">
+        <span class="svc-n">03</span>
+        <div class="svc-name"><h3>Terapia Capilar</h3><span>Reconstrução · saúde do fio</span></div>
+        <div class="svc-desc">
+          <p>Protocolos terapêuticos voltados à reconstrução profunda da fibra, devolvendo força, maciez e vitalidade aos fios mais fragilizados.</p>
+          <a href="https://wa.me/5534366424333" target="_blank" rel="noopener">Agendar <svg width="14" height="14" viewBox="0 0 24 24" style="display:inline;vertical-align:middle;"><use href="#arr-r"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TABELA DE PREÇOS ============================== -->
+<section class="precos" id="precos">
+  <div class="wrap">
+    <div class="precos-head-row rv">
+      <div class="s-head" style="margin-bottom:0;">
+        <p class="eyebrow"><span></span> TABELA DE SERVIÇOS</p>
+        <h2>Investimento na sua <em>beleza</em></h2>
+      </div>
+      <p class="precos-note">Valores de referência praticados no mercado de Minas Gerais. Sujeitos a avaliação presencial do fio.</p>
+    </div>
+
+    <div class="tabela-wrap rv">
+      <!-- Alisamentos -->
+      <div class="tab-group">
+        <div class="tab-group-title">Alisamentos</div>
+        <div class="tab-row"><span>Progressiva Brasileira</span><strong>R$ 150 – 250</strong></div>
+        <div class="tab-row"><span>Botox Capilar</span><strong>R$ 120 – 200</strong></div>
+        <div class="tab-row"><span>Alisamento Definitivo</span><strong>R$ 200 – 380</strong></div>
+        <div class="tab-row"><span>Nano Realinhamento</span><strong>R$ 180 – 320</strong></div>
+        <div class="tab-row"><span>Alisamento + Corte + Hidratação <span class="tag">Promo</span></span><strong>R$ 350</strong></div>
+      </div>
+
+      <!-- Mechas e Coloração -->
+      <div class="tab-group">
+        <div class="tab-group-title">Mechas e Coloração</div>
+        <div class="tab-row"><span>Mechas Completas</span><strong>R$ 180 – 350</strong></div>
+        <div class="tab-row"><span>Balayage / Californianas</span><strong>R$ 220 – 450</strong></div>
+        <div class="tab-row"><span>Luzes</span><strong>R$ 150 – 280</strong></div>
+        <div class="tab-row"><span>Coloração Completa</span><strong>R$ 100 – 200</strong></div>
+        <div class="tab-row"><span>Retoque de Raiz</span><strong>R$ 70 – 130</strong></div>
+      </div>
+
+      <!-- Terapia Capilar -->
+      <div class="tab-group">
+        <div class="tab-group-title">Terapia Capilar</div>
+        <div class="tab-row"><span>Hidratação Profunda</span><strong>R$ 60 – 120</strong></div>
+        <div class="tab-row"><span>Reconstrução Capilar</span><strong>R$ 80 – 160</strong></div>
+        <div class="tab-row"><span>Cronograma Capilar (3 etapas)</span><strong>R$ 120 – 200</strong></div>
+        <div class="tab-row"><span>Selagem dos Fios</span><strong>R$ 100 – 180</strong></div>
+        <div class="tab-row"><span>Banho de Verniz</span><strong>R$ 70 – 130</strong></div>
+      </div>
+
+      <!-- Cortes e Finalizações -->
+      <div class="tab-group">
+        <div class="tab-group-title">Cortes e Finalizações</div>
+        <div class="tab-row"><span>Corte Feminino</span><strong>R$ 60 – 120</strong></div>
+        <div class="tab-row"><span>Escova Progressiva</span><strong>R$ 70 – 140</strong></div>
+        <div class="tab-row"><span>Escova Modeladora</span><strong>R$ 50 – 100</strong></div>
+        <div class="tab-row"><span>Prancha / Babyliss</span><strong>R$ 40 – 80</strong></div>
+        <div class="tab-row"><span>Cauterização</span><strong>R$ 80 – 150</strong></div>
+      </div>
+    </div>
+
+    <p class="precos-obs rv"><strong>Atenção:</strong> Os valores acima são referências de mercado para Minas Gerais (2026). O valor exato é definido após avaliação presencial do tipo, tamanho e histórico do fio. Parcelamento em até <strong>10x no cartão</strong>. Entre em contato para solicitar um orçamento personalizado.</p>
+  </div>
+</section>
+
+<!-- ============================== O RITUAL ============================== -->
+<section class="ritual" id="ritual">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="eyebrow"><span></span> COMO FUNCIONA</p>
+      <h2>O ritual de <em>quatro etapas</em></h2>
+      <p>Da escuta inicial ao resultado final — um processo pensado para cada fio, cada cliente.</p>
+    </div>
+    <div class="ritual-rail rv">
+      <div class="r-step"><span class="rn">I</span><h4>Diagnóstico</h4><p>Avaliação completa do fio, histórico de tratamentos e definição do objetivo da cliente.</p></div>
+      <div class="r-step"><span class="rn">II</span><h4>Plano personalizado</h4><p>Definição da técnica ideal — alisamento, mechas ou terapia — sob medida para o seu fio.</p></div>
+      <div class="r-step"><span class="rn">III</span><h4>Execução premium</h4><p>Procedimento conduzido com produtos de alta performance e técnica refinada ao longo de mais de 20 anos.</p></div>
+      <div class="r-step"><span class="rn">IV</span><h4>Manutenção guiada</h4><p>Recomendações personalizadas para prolongar o resultado e manter a saúde do fio em casa.</p></div>
+    </div>
+    <div class="rail-hint rv"><span class="arr">&#8594;</span> Arraste para explorar</div>
+  </div>
+</section>
+
+<!-- ============================== DEPOIMENTOS ============================== -->
+<section class="testi" id="depoimentos">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="eyebrow"><span></span> DEPOIMENTOS</p>
+      <h2>O que dizem as <em>clientes</em></h2>
+    </div>
+  </div>
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--maxw);margin:0 auto;">
+    <div class="testi-track">
+      <div class="t-card"><span class="qm">&ldquo;</span><p>Substituir por depoimento real extraído dos comentários ou stories do Instagram @luandavalerianotherapyhair.</p><div class="t-auth"><strong>Nome da cliente</strong><span>Alisamento Premium</span></div></div>
+      <div class="t-card"><span class="qm">&ldquo;</span><p>Substituir por depoimento real extraído dos comentários ou stories do Instagram @luandavalerianotherapyhair.</p><div class="t-auth"><strong>Nome da cliente</strong><span>Mechas</span></div></div>
+      <div class="t-card"><span class="qm">&ldquo;</span><p>Substituir por depoimento real extraído dos comentários ou stories do Instagram @luandavalerianotherapyhair.</p><div class="t-auth"><strong>Nome da cliente</strong><span>Terapia Capilar</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTATO ============================== -->
+<section class="contato" id="contato">
+  <div class="wrap contato-grid">
+    <div class="rv">
+      <p class="c-lead">Pronta para escrever o <em>próximo capítulo</em> do seu cabelo?</p>
+      <div class="c-items">
+        <div class="c-item"><span class="lbl">WhatsApp</span><span class="val">(34) 3664-2433</span></div>
+        <div class="c-item"><span class="lbl">Endereço</span><span class="val">Rua Gustavo Martins de Oliveira, 133<br>Morada do Sol — Araxá MG</span></div>
+        <div class="c-item"><span class="lbl">Horário</span><span class="val">Terça a sábado, 9h às 19h</span></div>
+        <div class="c-item"><span class="lbl">Parcelamento</span><span class="val">Em até 10x no cartão sem juros</span></div>
+      </div>
+      <div class="c-social">
+        <a href="https://www.instagram.com/luandavalerianotherapyhair" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5534366424333" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <form class="c-form rv" onsubmit="handleForm(event)">
+      <div class="f-row"><label for="nome">Nome completo</label><input type="text" id="nome" required></div>
+      <div class="f-row"><label for="wpp">WhatsApp</label><input type="tel" id="wpp" required></div>
+      <div class="f-row">
+        <label for="srv">Serviço de interesse</label>
+        <select id="srv">
+          <option value="">Selecione</option>
+          <option>Alisamento Premium</option>
+          <option>Progressiva Brasileira</option>
+          <option>Botox Capilar</option>
+          <option>Mechas / Balayage</option>
+          <option>Terapia Capilar</option>
+          <option>Corte Feminino</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="f-row"><label for="msg">Mensagem (opcional)</label><textarea id="msg"></textarea></div>
+      <button type="submit" class="f-submit">Solicitar agendamento</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================== WHATSAPP FLOAT ============================== -->
+<a href="https://wa.me/5534366424333" class="wfloat" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.55 21.5 10.25 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.3 1.2-1.78 1.27-.46.07-1.02.1-1.65-.1-.38-.12-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.07-1.42-1.07-2.7s.68-1.93.92-2.18c.24-.25.52-.32.7-.32h.5c.16 0 .38-.03.6.46.22.5.74 1.8.8 1.93.07.13.11.28.02.45-.4.8-.8.96-.97 1.16-.18.2-.36.36-.16.7.2.35.9 1.5 1.93 2.42 1.33 1.2 2.46 1.57 2.8 1.74.34.18.55.15.75-.07.2-.22.86-.99 1.1-1.33.23-.34.46-.28.77-.17.3.1 1.93.9 2.27 1.07.33.16.55.24.63.38.08.13.08.78-.13 1.4z"/></svg>
+  <span class="wlbl">Falar no WhatsApp</span>
+</a>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <svg class="lv-mark" viewBox="0 0 260 120" style="color:var(--musgo)"><use href="#lv"/></svg>
+        <span class="nb"><strong>Luanda Valeriano</strong><small>THERAPY HAIR</small></span>
+      </div>
+      <div class="f-cols">
+        <div class="f-col">
+          <h5>Navegação</h5>
+          <a href="#sobre">Sobre</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#precos">Tabela de Preços</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="f-col">
+          <h5>Contato</h5>
+          <p>(34) 3664-2433</p>
+          <p>Rua Gustavo Martins de Oliveira, 133</p>
+          <p>Morada do Sol — Araxá MG</p>
+          <a href="https://www.instagram.com/luandavalerianotherapyhair" target="_blank" rel="noopener">@luandavalerianotherapyhair</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; 2026 Luanda Valeriano Therapy Hair. Todos os direitos reservados.</span>
+      <span>Site desenvolvido por Word Tecnologia</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// progresso de scroll
+const prog = document.getElementById('prog');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+});
+
+// header
+const hdr = document.getElementById('hdr');
+window.addEventListener('scroll', () => hdr.classList.toggle('solid', scrollY > 50));
+
+// menu mobile
+const ntog = document.getElementById('ntog');
+const mpanel = document.getElementById('mpanel');
+const mcls = document.getElementById('mcls');
+ntog.addEventListener('click', () => mpanel.classList.add('open'));
+mcls.addEventListener('click', () => mpanel.classList.remove('open'));
+mpanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mpanel.classList.remove('open')));
+
+// reveal on scroll
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('on'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.rv,.rvs').forEach(el => io.observe(el));
+
+// contador hero
+let counted = false;
+const statsIo = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting && !counted) {
+      counted = true;
+      document.querySelectorAll('[data-c]').forEach(el => {
+        const target = +el.getAttribute('data-c');
+        const suffix = target === 100 ? '%' : target >= 1000 ? '+' : '+';
+        const dur = 1600;
+        const start = performance.now();
+        (function tick(now) {
+          const p = Math.min((now - start) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.floor(ease * target) + (p >= 1 ? suffix : '');
+          if(p < 1) requestAnimationFrame(tick);
+        })(start);
+      });
+    }
+  });
+}, { threshold: 0.5 });
+const statsEl = document.querySelector('.hero-stats');
+if(statsEl) statsIo.observe(statsEl);
+
+// carrossel galeria — setas
+const gtrack = document.getElementById('gtrack');
+document.getElementById('gprev').addEventListener('click', () => {
+  const w = (gtrack.querySelector('.g-card')?.offsetWidth || 320) + 16;
+  gtrack.scrollBy({ left: -w, behavior: 'smooth' });
+});
+document.getElementById('gnext').addEventListener('click', () => {
+  const w = (gtrack.querySelector('.g-card')?.offsetWidth || 320) + 16;
+  gtrack.scrollBy({ left: w, behavior: 'smooth' });
+});
+
+// arrastar galeria com mouse
+let down = false, sx, sl;
+gtrack.addEventListener('mousedown', e => { down=true; sx=e.pageX; sl=gtrack.scrollLeft; gtrack.style.userSelect='none'; });
+window.addEventListener('mouseup', () => { down=false; gtrack.style.userSelect=''; });
+window.addEventListener('mousemove', e => { if(!down) return; gtrack.scrollLeft = sl - (e.pageX - sx) * 1.3; });
+
+// formulário → WhatsApp
+function handleForm(e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const wpp = document.getElementById('wpp').value;
+  const srv = document.getElementById('srv').value;
+  const msg = document.getElementById('msg').value;
+  const texto = encodeURIComponent(
+    `Olá, Luanda! Sou ${nome}.\nTelefone: ${wpp}\nServiço: ${srv || 'A definir'}\n${msg ? 'Mensagem: ' + msg : ''}`
+  );
+  window.open(`https://wa.me/5534366424333?text=${texto}`, '_blank');
+}
+</script>
+</body>
+</html>
