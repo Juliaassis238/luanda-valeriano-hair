@@ -236,11 +236,15 @@
       .services { padding: 88px 0; }
       .services-head, .gallery-head { display: block; }
       .services-head .section-lead, .gallery-head .section-lead { margin-top: 22px; }
-      .service-grid { grid-template-columns: 1fr 1fr; margin-top: 48px; }
-      .service-card { min-height: 185px; padding: 20px 16px; }
-      .service-card h3 { margin-top: 32px; font-size: 19px; }
-      .service-card p { font-size: 11px; }
+      .service-grid { display: block; margin-top: 48px; background: transparent; border: 0; }
+      .service-card { display: grid; grid-template-columns: 38px 1fr; column-gap: 16px; min-height: 0; padding: 25px 0 24px; background: transparent; border-top: 1px solid rgba(255,255,255,.18); }
+      .service-card:last-child { border-bottom: 1px solid rgba(255,255,255,.18); }
+      .service-card:hover { background: transparent; transform: none; }
+      .service-number { grid-row: 1 / span 2; padding-top: 4px; font-size: 10px; }
+      .service-card h3 { margin-top: 0; font-size: 22px; }
+      .service-card p { margin-top: 8px; font-size: 12px; line-height: 1.65; }
       .service-foot, .gallery-note { display: block; line-height: 1.9; }
+      .service-foot { margin-top: 28px; }
       .service-foot strong { display: block; margin-top: 8px; }
       .carousel-section { padding: 96px 0; }
       .carousel-header { display: block; }
