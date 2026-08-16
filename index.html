@@ -56,11 +56,11 @@
     .btn-light:hover { background: var(--gold-light); }
     .icon-arrow { font-size: 16px; line-height: 0; }
 
-    .topline { background: var(--forest-deep); color: rgba(255,255,255,.82); padding: 9px 0; font-size: 10px; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
+    .topline { position: absolute; inset: 0 0 auto; z-index: 24; background: transparent; color: rgba(23,59,43,.72); padding: 9px 0; font-size: 10px; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
     .topline strong { color: var(--gold-light); font-weight: 500; }
 
-    .site-header { position: fixed; inset: 0 0 auto; z-index: 20; background: rgba(251,250,246,.88); border-bottom: 1px solid transparent; backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); transition: border-color .3s, box-shadow .3s, background .3s; }
-    .site-header.scrolled { background: rgba(251,250,246,.96); border-color: var(--line); box-shadow: 0 10px 34px rgba(13,38,28,.07); }
+    .site-header { position: fixed; top: 28px; left: 0; right: 0; z-index: 20; background: transparent; border-bottom: 1px solid transparent; backdrop-filter: none; -webkit-backdrop-filter: none; transition: top .3s, border-color .3s, box-shadow .3s, background .3s; }
+    .site-header.scrolled { top: 0; background: rgba(251,250,246,.96); border-color: var(--line); box-shadow: 0 10px 34px rgba(13,38,28,.07); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
     .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 84px; gap: 24px; }
     .brand { display: flex; align-items: center; gap: 12px; min-width: 210px; }
     .brand img { width: 46px; height: 46px; object-fit: contain; }
@@ -81,22 +81,21 @@
     .menu-toggle span::after { top: 6px; }
     .mobile-nav { display: none; }
 
-    .hero { position: relative; min-height: 760px; padding-top: 84px; background: var(--sand); overflow: hidden; }
-    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; min-height: 676px; gap: 5vw; }
-    .hero-copy { padding: 66px 0 72px; }
-    .hero-kicker { display: flex; align-items: center; gap: 12px; color: var(--gold); font-size: 10px; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; }
+    .hero { position: relative; min-height: 100svh; padding-top: 0; overflow: hidden; background: #eadaca; }
+    .hero-backdrop { position: absolute; inset: 0; z-index: 0; display: block; }
+    .hero-backdrop img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+    .hero-content { position: relative; z-index: 1; display: flex; align-items: center; min-height: 100svh; padding-top: 72px; }
+    .hero-copy { max-width: 620px; padding: 48px 0 62px; color: var(--forest); }
+    .hero-kicker { display: flex; align-items: center; gap: 12px; color: var(--gold); font-size: 10px; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; text-shadow: 0 1px 15px rgba(251,250,246,.4); }
     .hero-kicker::before { content: ''; width: 40px; height: 1px; background: currentColor; }
-    .hero h1 { max-width: 670px; margin-top: 24px; color: var(--forest); font: 500 clamp(3.5rem, 7vw, 7.2rem)/.94 var(--display); letter-spacing: -.06em; }
+    .hero h1 { max-width: 640px; margin-top: 24px; color: var(--forest); font: 500 clamp(3.5rem, 7vw, 7.2rem)/.94 var(--display); letter-spacing: -.06em; text-shadow: 0 2px 24px rgba(251,250,246,.28); }
     .hero h1 em { display: block; color: var(--forest-soft); font-style: italic; font-weight: 400; }
-    .hero-copy > p { max-width: 500px; margin-top: 28px; color: var(--muted); font-size: 16px; line-height: 1.9; }
+    .hero-copy > p { max-width: 500px; margin-top: 28px; color: var(--muted); font-size: 16px; line-height: 1.9; text-shadow: 0 1px 15px rgba(251,250,246,.5); }
+    .hero-description-mobile { display: none; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
-    .hero-note { display: flex; align-items: center; gap: 16px; margin-top: 48px; color: var(--forest); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-note { display: flex; align-items: center; gap: 16px; margin-top: 48px; color: var(--forest); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; text-shadow: 0 1px 15px rgba(251,250,246,.42); }
     .hero-note strong { color: var(--gold); font: 500 26px var(--display); }
-    .hero-visual { position: relative; min-height: 602px; overflow: hidden; background: #e8d9c6; }
-    .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-    .hero-label { position: absolute; right: 0; bottom: 54px; width: 196px; padding: 20px 18px; background: rgba(251,250,246,.95); border-left: 3px solid var(--gold); box-shadow: 0 18px 36px rgba(13,38,28,.16); }
-    .hero-label strong { display: block; color: var(--forest); font: 500 23px/1.1 var(--display); }
-    .hero-label span { display: block; margin-top: 7px; color: var(--muted); font-size: 9px; font-weight: 500; letter-spacing: .14em; line-height: 1.6; text-transform: uppercase; }
+
 
     .intro { padding: 130px 0; background: var(--cream); }
     .intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 9vw; align-items: start; }
@@ -189,7 +188,6 @@
     @media (max-width: 1000px) {
       .nav { gap: 18px; }
       .nav a:nth-child(3) { display: none; }
-      .hero-grid { gap: 3vw; }
       .hero h1 { font-size: clamp(3.5rem, 8vw, 6rem); }
       .service-grid { grid-template-columns: repeat(2, 1fr); }
     }
@@ -205,17 +203,18 @@
       .mobile-nav { position: absolute; top: calc(100% + 1px); left: 0; right: 0; display: grid; gap: 0; max-height: 0; overflow: hidden; background: rgba(251,250,246,.98); transition: max-height .35s var(--ease); }
       .mobile-nav.open { max-height: 340px; border-bottom: 1px solid var(--line); box-shadow: 0 16px 30px rgba(13,38,28,.08); }
       .mobile-nav a { padding: 17px 24px; border-top: 1px solid var(--line); color: var(--forest); font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-      .hero { min-height: auto; padding-top: 72px; }
-      .hero-grid { display: flex; flex-direction: column; min-height: auto; gap: 0; }
-      .hero-copy { padding: 65px 0 48px; }
-      .hero h1 { font-size: clamp(3.45rem, 17vw, 5.6rem); }
-      .hero-copy > p { font-size: 14px; }
+      .site-header { top: 28px; }
+      .hero { min-height: 100svh; padding-top: 0; }
+      .hero-content { min-height: 100svh; padding: 108px 0 34px; align-items: flex-start; }
+      .hero-copy { max-width: 100%; padding: 0; }
+      .hero h1 { margin-top: 18px; font-size: clamp(3.05rem, 14vw, 4.8rem); }
+      .hero-copy > p { max-width: 300px; margin-top: 18px; font-size: 12px; line-height: 1.6; }
+      .hero-description-desktop { display: none; }
+      .hero-description-mobile { display: inline; }
+      .hero-actions { margin-top: 22px; }
       .hero-actions .btn { width: 100%; }
-      .hero-note { margin-top: 32px; }
-      .hero-visual { width: 100%; min-height: 470px; }
-      .hero-photo { inset: 0; width: 100%; height: 100%; }
-      .hero-label { right: 0; bottom: 35px; width: 175px; padding: 16px 14px; }
-      .hero-label strong { font-size: 20px; }
+      .hero-actions .btn-ghost { display: none; }
+      .hero-note { display: none; }
       .intro, .gallery, .location { padding: 88px 0; }
       .intro-grid, .location-grid { grid-template-columns: 1fr; gap: 55px; }
       .intro-aside p { max-width: 360px; }
@@ -248,8 +247,6 @@
     }
     @media (max-width: 420px) {
       .service-card h3 { font-size: 17px; }
-      .hero-visual { min-height: 410px; }
-      .hero-label { bottom: 24px; }
     }
   </style>
 </head>
@@ -279,20 +276,20 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
+      <picture class="hero-backdrop">
+        <source media="(max-width: 760px)" srcset="luanda-capa-mobile.webp">
+        <img src="luanda-capa-editorial.webp" width="1800" height="1013" alt="Luanda Valeriano em retrato editorial" fetchpriority="high">
+      </picture>
+      <div class="wrap hero-content">
         <div class="hero-copy reveal">
           <div class="hero-kicker">Beleza com propósito</div>
           <h1>Seu cabelo.<em>Sua melhor versão.</em></h1>
-          <p>Especialista em mechas, alisamentos e terapia capilar, Luanda Valeriano transforma cuidado técnico em autoestima, com atendimento próximo e resultados que respeitam a sua identidade.</p>
+          <p><span class="hero-description-desktop">Especialista em mechas, alisamentos e terapia capilar, Luanda Valeriano transforma cuidado técnico em autoestima, com atendimento próximo e resultados que respeitam a sua identidade.</span><span class="hero-description-mobile">Mechas, alisamentos e terapia capilar com cuidado personalizado.</span></p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/553436642433?text=Ol%C3%A1%20Luanda%2C%20gostaria%20de%20consultar%20valores%20e%20agendar%20um%20atendimento" target="_blank" rel="noopener">Consultar valores <span class="icon-arrow">↗</span></a>
             <a class="btn btn-ghost" href="#sobre">Conheça a Luanda</a>
           </div>
           <div class="hero-note"><strong>20+</strong><span>anos de experiência<br>e dedicação aos fios</span></div>
-        </div>
-        <div class="hero-visual reveal delay-2">
-          <img class="hero-photo" src="luanda-capa-editorial.webp" width="1800" height="1013" alt="Luanda Valeriano em retrato editorial" fetchpriority="high">
-          <div class="hero-label"><strong>LV</strong><span>Mechas · Alisamentos<br>· Terapia Capilar</span></div>
         </div>
       </div>
     </section>
